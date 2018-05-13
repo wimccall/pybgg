@@ -28,7 +28,7 @@ class boardGameGeek:
         game = tree[0] # assume the first result is the game we are looking for
         return game.get('id')
 
-    # This function searches for the game name passed in and if found, returns the most recent matching game id
+    # This function searches for the game name passed in and if found, returns the firs matching game id
     def _SearchForGameId(self, game="", searchtype='boardgame'):
         # Use only the first 2 words as our search term. BGG search is not very smart, so we try to give it less information
         search_list = game.split()[:2]
@@ -57,6 +57,7 @@ class boardGameGeek:
             if int(year) > int(max_year):
                 max_year = year
                 most_recent = game.get('id')
+        print(most_recent)
         return most_recent
 
     # Returns a dictionary of information about a game, given its ID
