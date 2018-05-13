@@ -17,3 +17,6 @@ g = bgg.GetGameInfo(ID=120677) # 120677 is Terra Mystica
 
 # Support
 For now, only board game data is supported, but I will add support for the rest of the API in the future. If you have a suggestion, please leave an issue or PR and I will work on it
+
+See: https://boardgamegeek.com/wiki/page/BGG_XML_API2
+and https://boardgamegeek.com/xmlapi/termsofuse
