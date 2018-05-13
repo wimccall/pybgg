@@ -4,7 +4,7 @@ Description: Python boardgamegeek xmlapi2 wrapper
 installation:
 pip install pybgg
 
-Usage:
+# Usage:
 from boardgamegeek import boargGameGeek
 
 bgg = boardGameGeek() # Global bgg object. 
