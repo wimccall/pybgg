@@ -98,7 +98,7 @@ class boardGameGeek:
         try:
             game_info['year_published'] = game.find('yearpublished').get('value')
         except:
-            game_info['year_published'] = ''
+            game_info['year_published'] = 0 # Default to 0 so that the user can expect a number
         
         try:
             game_info['image_source'] = game.find('image').text
